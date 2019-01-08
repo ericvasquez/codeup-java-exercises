@@ -16,13 +16,20 @@ public class ControlFlowExercises {
 //            number+=2;
 //        }while (number<=100);
 
-int newNumber = 100;
-do{
-    System.out.println(newNumber);
-    newNumber-=5;
-}while (newNumber>=-10);
+//int newNumber = 100;
+//do{
+//    System.out.println(newNumber);
+//    newNumber-=5;
+//}while (newNumber>=-10);
+
+
+        long numberSquared = 2;
+        do{
+            System.out.println(numberSquared);
+            numberSquared*=numberSquared;
+        }while (numberSquared<1000000);
+
+
 
     }
-
-
 }
