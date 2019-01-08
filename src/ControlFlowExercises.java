@@ -101,17 +101,17 @@ String gradeLetter = "";
             System.out.println("What is the grade? ");
             int grade = scan.nextInt();
 
-            if(grade<=100 && grade>=90)
+            if(grade<=100 && grade>=88)
             gradeLetter="A";
 
-            if(grade<=89 && grade>=80)
+            if(grade<=87 && grade>=80)
             gradeLetter="B";
 
-            if(grade<=79 && grade>=70)
+            if(grade<=79 && grade>=67)
             gradeLetter="C";
 
-            if(grade<=69 && grade>=60)
-            gradeLetter="C";
+            if(grade<=66 && grade>=60)
+            gradeLetter="D";
 
             if(grade<=59)
             gradeLetter="F";
