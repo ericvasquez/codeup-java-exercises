@@ -9,6 +9,12 @@ public class ControlFlowExercises {
 //            System.out.print(i + " ");
 //            System.out.println();
 
+        int i = 5;
+        while (i<=15){
+            System.out.print(i + " ");
+            i++;
+        }
+
 
 //        int number = 2;
 //        do {
@@ -23,12 +29,12 @@ public class ControlFlowExercises {
 //}while (newNumber>=-10);
 
 
-        long numberSquared = 2;
-        do{
-            System.out.println(numberSquared);
-            numberSquared*=numberSquared;
-        }while (numberSquared<1000000);
-
+//        long numberSquared = 2;
+//        do{
+//            System.out.println(numberSquared);
+//            numberSquared*=numberSquared;
+//        }while (numberSquared<1000000);
+//
 
 
     }
