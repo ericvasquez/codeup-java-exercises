@@ -66,34 +66,70 @@ public class ControlFlowExercises {
 //}
 
 
-        boolean answer = true;
-        while(answer == true){
-            System.out.println("What number would you like to go up to? ");
-            int highestNumber = scan.nextInt();
+//        boolean answer = true;
+//        while(answer == true){
+//            System.out.println("What number would you like to go up to? ");
+//            int highestNumber = scan.nextInt();
+//
+//
+//            System.out.println("Here is your table!");
+//            System.out.println("Number  |  Squared  |  Cubed");
+//            System.out.println("------  |  -------  |  -----");
+//
+//
+//            for(int startingNumber = 1; startingNumber<=highestNumber; startingNumber++) {
+//                int startingNumberSq = startingNumber * startingNumber;
+//                int startingNumberCu = startingNumber * startingNumber * startingNumber;
+//                System.out.println(startingNumber + "       |  " + startingNumberSq + "        |  " + startingNumberCu);
+//
+//            }
+//            scan.nextLine();
+//
+//
+//        System.out.println("Would you like to continue? Y or N?");
+//        String newAnswer = scan.nextLine();
+//
+//        if(newAnswer.equalsIgnoreCase("Y"))
+//            answer=true;
+//        else
+//            answer=false;
+//    }
+String gradeLetter = "";
+        boolean gradeAnswer = true;
+        while(gradeAnswer == true){
 
+            System.out.println("What is the grade? ");
+            int grade = scan.nextInt();
 
-            System.out.println("Here is your table!");
-            System.out.println("Number  |  Squared  |  Cubed");
-            System.out.println("------  |  -------  |  -----");
+            if(grade<=100 && grade>=90)
+            gradeLetter="A";
 
+            if(grade<=89 && grade>=80)
+            gradeLetter="B";
 
-            for(int startingNumber = 1; startingNumber<=highestNumber; startingNumber++) {
-                int startingNumberSq = startingNumber * startingNumber;
-                int startingNumberCu = startingNumber * startingNumber * startingNumber;
-                System.out.println(startingNumber + "       |  " + startingNumberSq + "        |  " + startingNumberCu);
+            if(grade<=79 && grade>=70)
+            gradeLetter="C";
 
-            }
+            if(grade<=69 && grade>=60)
+            gradeLetter="C";
+
+            if(grade<=59)
+            gradeLetter="F";
+
+            System.out.println("Your grade is: " + gradeLetter);
+
             scan.nextLine();
 
 
-        System.out.println("Would you like to continue? Y or N?");
-        String newAnswer = scan.nextLine();
+            System.out.println("Would you like to continue? Y or N?");
+            String gradeNewAnswer = scan.nextLine();
 
-        if(newAnswer.equalsIgnoreCase("Y"))
-            answer=true;
-        else
-            answer=false;
-    }
+            if(gradeNewAnswer.equalsIgnoreCase("Y"))
+                gradeAnswer=true;
+            else
+                gradeAnswer=false;
+        }
+
 
     }
 }
