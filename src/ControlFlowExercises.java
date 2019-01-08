@@ -10,13 +10,17 @@ public class ControlFlowExercises {
 //            System.out.println();
 
 
-        int number = 2;
-        do {
-            System.out.println(number);
-            number+=2;
-        }while (number<=100);
+//        int number = 2;
+//        do {
+//            System.out.println(number);
+//            number+=2;
+//        }while (number<=100);
 
-
+int newNumber = 100;
+do{
+    System.out.println(newNumber);
+    newNumber-=5;
+}while (newNumber>=-10);
 
     }
 
