@@ -13,39 +13,59 @@ public class ControlFlowExercises {
 //        }
 
 
-        for(int i = 5; i<=15; i++)
-            System.out.print(i + " ");
-        System.out.println();
-//        int number = 2;
-//        do {
-//            System.out.println(number);
-//            number+=2;
-//        }while (number<=100);
-
-        for(int number = 2; number<=100; number+=2)
-            System.out.println(number + " ");
-
-
-
+//        for(int i = 5; i<=15; i++)
+//            System.out.print(i + " ");
+//        System.out.println();
+////        int number = 2;
+////        do {
+////            System.out.println(number);
+////            number+=2;
+////        }while (number<=100);
+//
+//        for(int number = 2; number<=100; number+=2)
+//            System.out.println(number + " ");
+//
+//
+//
 
 //int newNumber = 100;
 //do{
 //    System.out.println(newNumber);
 //    newNumber-=5;
 //}while (newNumber>=-10);
-
-for(int newNumber = 100; newNumber>=-10; newNumber-=5)
-    System.out.println(newNumber);
-
-
-//        long numberSquared = 2;
-//        do{
-//            System.out.println(numberSquared);
-//            numberSquared*=numberSquared;
-//        }while (numberSquared<1000000);
 //
-for(long numberSquared = 2; numberSquared<1000000; numberSquared*=numberSquared)
-    System.out.println(numberSquared);
+//for(int newNumber = 100; newNumber>=-10; newNumber-=5)
+//    System.out.println(newNumber);
+//
+//
+////        long numberSquared = 2;
+////        do{
+////            System.out.println(numberSquared);
+////            numberSquared*=numberSquared;
+////        }while (numberSquared<1000000);
+////
+//for(long numberSquared = 2; numberSquared<1000000; numberSquared*=numberSquared)
+//    System.out.println(numberSquared);
+
+for(int fb = 1; fb<=100; fb++){
+    if(fb%3==0 && fb%5==0){
+        System.out.println("FizzBuzz");
+        continue;}
+
+    if(fb%3==0){
+        System.out.println("Fizz");
+        continue;}
+
+    if(fb%5==0){
+        System.out.println("Buzz");
+        continue;}
+
+    else
+        System.out.println(fb);
+
+}
+
+
 
     }
 }
