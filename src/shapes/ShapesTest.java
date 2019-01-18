@@ -1,18 +1,16 @@
 package shapes;
 
 public class ShapesTest {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
+        Measurable shape;
 
+        shape = new Square(4);
+        System.out.println("Area: " + shape.getArea());
+        System.out.println("Perimeter: " + shape.getPerimeter());
 
-        Rectangle box1 = new Rectangle(5,4);
-        System.out.println("The area of box1 is: " + box1.getArea());
-        System.out.println("The perimeter of box1 is: " + box1.getPerimeter());
-
-        Rectangle box2 = new Square(5);
-        System.out.println("The area of box2 is: " + box2.getArea());
-        System.out.println("The perimeter of box2 is: " + box2.getPerimeter());
-
-
+        Measurable myShape = new Rectangle(10, 17);
+        System.out.println("Area: " + myShape.getArea());
+        System.out.println("Perimeter: " + myShape.getPerimeter());
     }
 }
