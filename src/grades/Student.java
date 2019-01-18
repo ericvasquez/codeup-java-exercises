@@ -5,50 +5,51 @@ import java.util.ArrayList;
 public class Student {
 
 
-    private String studentsName;
+    private String name;
     private ArrayList<Integer> grades;
 
+
     public Student(String name) {
-        this.studentsName = name;
+        this.name = name;
         this.grades = new ArrayList<>();
     }
 
 
     public Student(String name, ArrayList<Integer> grades) {
-        this.studentsName = name;
+        this.name = name;
         this.grades = grades;
 
     }
 
-
-    public String getStudentsName() {
-        return this.studentsName;
+//returns the Student's name
+    public String getName() {
+        return this.name;
     }
-
-
 
     // adds the given grade to the grades property
     public void addGrade(int grade){
-
-
         grades.add(grade);
     }
 
     // returns the average of the students grades
     public double getGradeAverage(){
 
-
         double avg = 0;
         for (int i = 0; i < grades.size(); i++) {
             avg += grades.get(i);
+
+            //for (int grade : grades){
+            // avg +=grade;
+            // }
         }
+        // return avg/grades.size();
+        if(grades.size()==0)
+            return 0;
+        else
         return (int) Math.round(avg / grades.size());
-
     }
 
-    public String toString() {
-        return this.studentsName + "'s grades: of " + this.grades;
-    }
+
 
 
     public static void main(String[] args){
