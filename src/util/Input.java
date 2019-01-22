@@ -20,9 +20,25 @@ public class Input {
         return yesNo();
     }
 
-    public int getInt() {
-        return scanner.nextInt();
+    public int getInt(){
+        String userInput;
+       try {
+           //get input
+           //parse input string as an integer
+           //if valid, return input
+           userInput =  scanner.next();
+          return Integer.valueOf(userInput);
+
+       }
+
+        catch (Exception e){
+           //runs if try throws an exception
+            System.out.println("Input a valid integer ");
+            //runs getInt() again if it throws an exception
+            return getInt();
+        }
     }
+
 
     public int getInt(String prompt) {
         System.out.println(prompt);
@@ -53,8 +69,23 @@ public class Input {
         return getString();
     }
 
-    public double getDouble() {
-        return scanner.nextDouble();
+    public double getDouble(){
+        String userInput;
+        try {
+            //get input
+            //parse input string as an integer
+            //if valid, return input
+            userInput =  scanner.next();
+            return Double.valueOf(userInput);
+
+        }
+        //Catches all exceptions
+        catch (Exception e){
+            //runs if try throws an exception
+            System.out.println("Input a valid decimal ");
+            //runs getDouble() again if it throws an exception
+            return getDouble();
+        }
     }
 
     public double getDouble(String prompt) {
